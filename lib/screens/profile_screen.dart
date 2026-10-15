@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../widgets/profile_photo.dart';
 import '../widgets/profile_info.dart';
+import '../widgets/social_media_row.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -31,6 +32,7 @@ class ProfileScreen extends StatelessWidget {
                 lokasi: 'Yogyakarta, Indonesia',
               ),
               const SizedBox(height: 24),
+
               // Tombol aksi
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -47,6 +49,15 @@ class ProfileScreen extends StatelessWidget {
                   ),
                 ],
               ),
+
+              const SizedBox(height: 16),
+
+              // Media sosial
+              const Text(
+                'Media Sosial',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+              const SocialMediaRow(),
             ],
           ),
         ),
